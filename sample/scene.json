@@ -1,0 +1,14 @@
+{
+  "empty_view_code": "E_EMPTY_VIEW",
+  "budget": 3,
+  "view": {"x": 0, "y": 0, "w": 20, "h": 20},
+  "occluders": [{"x": 0, "y": 0, "w": 5, "h": 10, "depth": 1}],
+  "last_frame": ["o2"],
+  "objects": [
+    {"id": "o0", "x": 1, "y": 1, "w": 2, "h": 2, "depth": 3},
+    {"id": "o1", "x": 1, "y": 1, "w": 2, "h": 2, "depth": 0},
+    {"id": "o2", "x": 6, "y": 1, "w": 2, "h": 2, "depth": 2},
+    {"id": "o3", "x": 18, "y": 18, "w": 5, "h": 5, "depth": 1},
+    {"id": "o4", "x": 2, "y": 2, "w": 1, "h": 1, "depth": 5}
+  ]
+}
