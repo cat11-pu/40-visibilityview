@@ -13,13 +13,13 @@ const cut = cull(spec.objects, spec.view);
 const hidden = occlude(spec.objects, spec.view, spec.last_frame || [], spec.budget);
 const out = render(spec);
 
-emit("视口内的对象 =", JSON.stringify(cut.inside));
-emit("被裁剪掉的对象 =", JSON.stringify(cut.outside));
-emit("被遮挡剔除的对象 =", JSON.stringify(hidden.occluded));
-emit("复用的上帧结果 =", JSON.stringify(hidden.reused));
+emit("视口内的对象 =", cut.inside);
+emit("被裁剪掉的对象 =", cut.outside);
+emit("被遮挡剔除的对象 =", hidden.occluded);
+emit("复用的上帧结果 =", hidden.reused);
 emit("预算消耗 =", hidden.budget_used);
-emit("最终可见 =", JSON.stringify(out.visible));
-emit("误剔的对象 =", JSON.stringify(out.false_culled));
+emit("最终可见 =", out.visible);
+emit("误剔的对象 =", out.false_culled);
 emit("视口无效的错误码 =", spec.empty_view_code);
 
 
